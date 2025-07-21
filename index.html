@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>jogo</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>Pedra,Papel e Tesoura</h1>
+        <div class="buttons">
+
+            <button  id="rock" onclick="playHuma('rock')">&#x1F44A;&#x1F3FB;</button>
+            <button id="paper" onclick="playHuma('paper')">&#x270B;&#x1F3FB;</button>
+            <button id="scissors" onclick="playHuma('scissors')">&#x270C;&#x1F3FB;</button>
+
+        </div>
+        <p class="result"></p>
+         
+        <p class="your-score">Sua pontuação: <span id="human-score">0</span> </p>
+        <p class="machine-score">pontuação da Alexa: <span id="machine-score">0</span> </p>
+        <button class="button-zerar" onclick="zerarPontuacoes()">Zerar Pontuações</button>
+    </div>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
